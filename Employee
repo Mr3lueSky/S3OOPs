@@ -1,0 +1,70 @@
+[10:31 PM, 11/3/2022] Amy: import java.util.*;
+public class Employee
+{
+    int salary;
+    String name;
+    int hours;
+    void getinfo(int sal,String n,int hrs)
+    {
+        salary=sal;
+        name=n;
+        hours=hrs;
+    }
+    void addsal()
+    {
+        if(salary<500)
+        {
+            salary=salary+10;
+             System.out.println("The salary is "+salary);
+        }
+        else
+        System.out.println("The salary is "+salary);
+    }
+    void addwork()
+    {
+        if(hours>6)
+        {
+            salary=salary+5;
+             System.out.println("The salary is "+salary);
+        }
+        else
+        System.out.println("The salary is "+salary);
+    }
+    public static void main(String[] arg)
+    {
+        int x,y;
+        String z;
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the name of the employee");
+        z=s.nextLine();
+        System.out.println("Enter the salary");
+        x=s.nextInt();
+        System.out.println("Enter the hours");
+        y=s.nextInt();
+        Employee e=new Employee();
+        e.getinfo(x,z,y);
+        e.addsal();
+        e.addwork();
+    }
+}
+[10:31 PM, 11/3/2022] Amy: import java.util.*;
+public class Frequency
+{
+    public static void main(String arg[])
+    {
+        Scanner s=new Scanner(System.in);
+        String str;
+        int i,count=0;
+        char x;
+        System.out.println("Enter the string");
+        str=s.nextLine();
+        System.out.println("Enter the character");
+        x=s.next().charAt(0);
+        for(i=0;i<str.length();i++)
+        {
+            if(x==str.charAt(i))
+            count=count+1;
+        }
+        System.out.println("The letter occurs "+count+" times");
+    }
+}
