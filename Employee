@@ -1,4 +1,4 @@
-[10:31 PM, 11/3/2022] Amy: import java.util.*;
+import java.util.*;
 public class Employee
 {
     int salary;
