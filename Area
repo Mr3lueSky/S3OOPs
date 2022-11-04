@@ -1,0 +1,27 @@
+import java.util.*;
+public class Area
+{
+    int length;
+    int breadth;
+    int getArea()
+    {
+        return(length*breadth);
+    }
+    void setDim(int l,int b)
+    {
+        length=l;
+        breadth=b;
+    }
+    public static void main(String[] arg)
+    {
+        int x,y;
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the length ");
+        x=s.nextInt();
+        System.out.println("Enter the breadth ");
+        y=s.nextInt();
+        Area r=new Area();
+        r.setDim(x,y);
+        System.out.println("Area is "+r.getArea());
+    }
+}
