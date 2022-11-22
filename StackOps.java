@@ -3,9 +3,6 @@ import java.util.*;
 public class StackOps{
 	int top = -1,N=5;
 	int[] stack = new int[5];
-	/*StackOps(){
-		int top=-1;
-	}*/
 
 void push(){
 	if(top == N-1){
@@ -62,6 +59,7 @@ public static void main(String[] args){
 		case 4: st.display();
 		break;
 		case 3: st.peek();
+		break;
 		case 5: System.exit(0);
 		}
 	} 
